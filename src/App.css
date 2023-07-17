@@ -708,7 +708,6 @@ text-decoration: none;
 {
   font-size: 15px;
 }
-}
 .login_register_btn
 {
   padding: 1px 35px   
@@ -738,4 +737,5 @@ text-decoration: none;
 .user_com{
   top: 0px;
   right: 230px;
+}
 }
