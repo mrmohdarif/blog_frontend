@@ -1,10 +1,9 @@
-import React, { useContext } from "react";
-import { store } from "./Home";
+import React from "react";
 import { Link } from "react-router-dom";
 
-export function Thelateststories(){
-    const [data3]=useContext(store)
-    console.log("this is data3",data3);
+
+function Thelateststories(props){
+    const token=localStorage.getItem("token")
     return(
         <div className="stores">
         
@@ -12,11 +11,11 @@ export function Thelateststories(){
            <div className="latest_stories">
            
         
-           {data3.filter((item)=>item.categorey==="Latest Stories"  ).map((d,index)=>{
+           {props.data.filter((item)=>item.categorey==="Latest Stories" && item.name==="homepage"  ).map((d,index)=>{
                 return(
                     <div className="latest_stories_box" key={d.id}>
-                    <Link to={d.path}><img src={d.img} alt="img" style={{width:"350px"}}/></Link>
-                    <Link to={d.path} className="store_home_link_text"><p >{d.text}</p></Link>
+                    {token?<Link to={d.path}><img src={d.img} alt="img" style={{width:"350px"}}/></Link>:<Link to='/signuppage'><img src={d.img} alt="img" style={{width:"350px"}}/></Link>}
+                    <Link to={d.path} className="store_home_link_text"><p >{d.description}</p></Link>
                     </div>  
                 )
              })}
@@ -29,3 +28,4 @@ export function Thelateststories(){
         </div>
     )
 }
+export default Thelateststories

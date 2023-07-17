@@ -1,4 +1,7 @@
 import React from 'react'
+// import Signin from './Signin'
+// import Singinpage from './Singinpage'
+// import Signuppage from './Signuppage'
 
 function Footer() {
   return (
@@ -9,6 +12,8 @@ function Footer() {
       <span className="copyright">&#169;2023 Copyright:prepbyte.com</span>
     </footer>
       {/* <div className='footer'></div> */}
+      {/* <Singinpage/>
+      <Signuppage/>     */}
     </>
   )
 }

@@ -1,15 +1,15 @@
-import React, { useContext } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
-import { store1 } from "../../NavigationBar";
+import React  from "react";
+import {  useNavigate } from "react-router-dom";
 
-export function Javan(){
-  const [data20]=useContext(store1)
+
+export function Javan(props){
+  
   const back=useNavigate()
-  console.log("data20",data20)
+  
     return(
         <div>
          <div className="main_move_div">
-            {data20.filter((item)=>item.categorey==='The Latest' && item.name==='move').map((data,index)=>{
+            {props.value.filter((item)=>item.categorey==='The Latest' && item.name==='move').map((data,index)=>{
                 return(
                     <div>
                     <div className="poster">

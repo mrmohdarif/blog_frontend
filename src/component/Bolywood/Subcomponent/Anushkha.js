@@ -1,15 +1,15 @@
-import React, { useContext } from 'react'
-import { store1 } from '../../../NavigationBar'
+import React from 'react'
+
 import { useNavigate } from 'react-router-dom'
 
 
-function Anushkha() {
-  const [data25]=useContext(store1)
-  const back=useNavigate(data25)
+function Anushkha(props) {
+
+  const back=useNavigate()
   return (
     <div className="papaya_main_div">
        
-    {data25.filter((item)=>item.categorey==="News" && item.path==='/anushkha').map((data,index)=>{
+    {props.value.filter((item)=>item.categorey==="News" && item.path==='/anushkha').map((data,index)=>{
       return(
           <div className="papaya_sub"> 
               <h1>{data.title}</h1>

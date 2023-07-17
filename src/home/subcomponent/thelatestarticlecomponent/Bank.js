@@ -1,13 +1,13 @@
-import React, { useContext } from 'react'
-import { store1 } from '../../../NavigationBar'
+import React  from 'react'
+
 import { useNavigate } from 'react-router-dom'
 
-function Bank() {
-  const [data20]=useContext(store1)
+function Bank(props) {
+
   const back=useNavigate()
   return (
     <div className="main_move_div">
-    {data20.filter((item)=>item.categorey==='The Latest Article' && item.path==='/bank').map((data,index)=>{
+    {props.value.filter((item)=>item.categorey==='The Latest Article' && item.path==='/bank').map((data,index)=>{
         return(
             <div>
                 <h1 style={{textAlign:"center"}}>{data.heading}</h1>

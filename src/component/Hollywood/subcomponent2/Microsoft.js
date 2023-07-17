@@ -1,14 +1,14 @@
-import React, { useContext } from 'react'
-import { store1 } from '../../../NavigationBar'
+import React from 'react'
+
 import { useNavigate } from 'react-router-dom'
 
-function Microsoft() {
-  const [dataE]=useContext(store1)
-  const back=useNavigate(dataE)
+function Microsoft(props) {
+
+  const back=useNavigate()
   return (
     <div className="papaya_main_div">
        
-    {dataE.filter((item)=>item.categorey==="The Latest Article" && item.name==="Hollywood" && item.path==='/microsoft').map((data,index)=>{
+    {props.value.filter((item)=>item.categorey==="The Latest Article" && item.name==="Hollywood" && item.path==='/microsoft').map((data,index)=>{
       return(
           <div className="papaya_sub"> 
               <h1>{data.title}</h1>

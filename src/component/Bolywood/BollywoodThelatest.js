@@ -1,22 +1,22 @@
-import React, { useContext } from "react";
-import { store1 } from "../../NavigationBar";
+import React from "react";
+
 import { Link } from "react-router-dom";
 
-export function BollywoodThelatest() {
-  const [data23] = useContext(store1);
-  console.log("this data23", data23);
+function BollywoodThelatest(props) {
+  const token=localStorage.getItem("token")
+  console.log("this is bolywood the latest",props.data);
 
   return (
     <>
       <h1>The Latest</h1>
 
       <div className="the_latest">
-        {data23
+        {props.data 
           .filter((item) => item.categorey === "News")
           .map((data, index) => {
             return (
               <div className="the_latest_image" key={data.id}>
-                <Link to={data.path}>
+               {token?<Link to={data.path}>
                   <img
                     src={data.urlToImage}
                     alt="the_latest"
@@ -27,14 +27,28 @@ export function BollywoodThelatest() {
                     }}
                     className="img"
                   />
-                </Link>
+                </Link>:<Link to='/signuppage'>
+                  <img
+                    src={data.urlToImage}
+                    alt="the_latest"
+                    style={{
+                      width: "auto",
+                      height: "200px",
+                      objectFit: "cover",
+                    }}
+                    className="img"
+                  />
+                </Link>}
 
                 <h3>{data.title}</h3>
                 <p>{data.publishedAt}</p>
               </div>
             );
           })}
+
+
       </div>
     </>
   );
 }
+export default BollywoodThelatest

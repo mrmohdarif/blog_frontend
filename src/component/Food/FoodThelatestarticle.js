@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
-import { store1 } from "../../NavigationBar";
+import React  from "react";
+
 import { Link } from "react-router-dom";
-export function FoodThelatestarticle(){
-    const [data18]=useContext(store1)
+export function FoodThelatestarticle(props){
+const token=localStorage.getItem('token')
     return(
         <>
           
@@ -11,10 +11,10 @@ export function FoodThelatestarticle(){
         <div className="the_latest_article_main">
      
            <div className="the_latest_article_child">
-               {data18.filter((item)=>item.categorey==="The Latest Article" && item.name==="Food").map((d1,index)=>{
+               {props.data.filter((item)=>item.categorey==="The Latest Article" && item.name==="Food").map((d1,index)=>{
                 return(
                 <div className="latest_article_box" key={d1.id}>
-                <Link to={d1.path}><img src={d1.urlToImage} className="food_the_latestarticle_img" alt="latest_article" style={{marginTop:"10px"}}/></Link>
+                {token ? <Link to={d1.path}><img src={d1.urlToImage} className="food_the_latestarticle_img" alt="latest_article" style={{marginTop:"10px"}}/></Link>:<Link to="/signuppage"><img src={d1.urlToImage} className="food_the_latestarticle_img" alt="latest_article" style={{marginTop:"10px"}}/></Link>}
                  <div className="latest_article_box_child">
                     <h3>{d1.title}</h3>
                     <p>{d1.description}</p>

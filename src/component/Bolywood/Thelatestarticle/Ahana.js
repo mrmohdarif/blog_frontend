@@ -1,18 +1,18 @@
-import React, { useContext } from 'react'
-import { store1 } from '../../../NavigationBar'
+import React from 'react'
+
 import { useNavigate } from 'react-router-dom'
 
-function Ahana() {
-  const [dataC]=useContext(store1)
-  console.log("dataC",dataC);
-  const back=useNavigate(dataC)
+function Ahana(props) {
+  
+ 
+  const back=useNavigate()
   return (
     
 
 
 
     <div className="papaya_main_div">
-    {dataC
+    {props.value
       .filter(
         (item) =>
           item.categorey === "The Latest Article" &&

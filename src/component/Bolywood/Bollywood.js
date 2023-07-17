@@ -1,14 +1,28 @@
-import React, { useContext } from "react";
-
+import React, { useEffect, useState } from "react";
+import BollywoodThelatest from './BollywoodThelatest';
+import BollywoodThelatestarticle from './BollywoodThelatestarticle';
+import BollywoodThelateststories from './BollywoodThelateststories'
+import axios from "axios";
 import { Nav } from "../../Nav";
-import { store1 } from "../../NavigationBar";
-import { BollywoodThelatest } from "./BollywoodThelatest";
-import { BollywoodThelatestarticle } from "./BollywoodThelatestarticle";
-import { BollywoodThelateststories } from "./BollywoodThelateststories";
 import Footer from "../../Footer";
 export function Bollywood() {
-  const [data5] = useContext(store1);
-  console.log("this is data5", data5);
+  const [bollywood,setbollywood]=useState([])
+
+  useEffect(()=>{
+    fetch()
+  },[])
+  
+  const fetch=async()=>{
+    const response=await axios.get("http://localhost:8080/bollywood")
+    try{
+      setbollywood(response.data)
+    }
+    catch(err){
+      console.log(err);
+    }
+    
+  }
+  console.log(bollywood);
   return (
     <>
       <Nav />
@@ -54,10 +68,10 @@ export function Bollywood() {
           />
         </div>
       </div>
-      <store1.Provider></store1.Provider>
-      <BollywoodThelatest />
-      <BollywoodThelatestarticle />
-      <BollywoodThelateststories />
+    
+      <BollywoodThelatest data={bollywood}/>
+      <BollywoodThelatestarticle data={bollywood}/>
+      <BollywoodThelateststories data={bollywood}/>
       <Footer/>
     </>
   );

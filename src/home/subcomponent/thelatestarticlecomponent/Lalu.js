@@ -1,12 +1,12 @@
-import React, { useContext } from 'react'
-import { store1 } from '../../../NavigationBar'
+import React  from 'react'
 
-function Lalu() {
-  const [data22]=useContext(store1)
+
+function Lalu(props) {
+
     return(
         <>
          <div className="papaya_main_div">
-          {data22.filter((item)=>item.name==="tiktok").map((data,index)=>{
+          {props.value.filter((item)=>item.name==="tiktok").map((data,index)=>{
             return(
                 <div className="papaya_sub"> 
                     <h1>{data.title}</h1>

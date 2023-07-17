@@ -1,13 +1,13 @@
-import React, { useContext } from 'react'
-import { store1 } from '../../../NavigationBar'
+import React  from 'react'
+
 import { useNavigate } from 'react-router-dom'
 
-function Priyanka() {
-  const [dataB]=useContext(store1)
-  const back=useNavigate(dataB)
+function Priyanka(props) {
+
+  const back=useNavigate()
   return (
     <div className="papaya_main_div">
-    {dataB
+    {props.value
       .filter(
         (item) =>
           item.categorey === "The Latest Article" &&

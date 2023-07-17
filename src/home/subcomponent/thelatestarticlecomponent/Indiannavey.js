@@ -1,16 +1,15 @@
-import React, { useContext } from 'react'
-import { store1 } from '../../../NavigationBar'
+import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
 
-function Indiannavey() {
-  const [data21]=useContext(store1)
+function Indiannavey(props) {
+
   const back=useNavigate()
-  console.log("datapapaya",data21)
+ 
    return(
        <>
         <div className="papaya_main_div">
-         {data21.filter((item)=>item.name==="fruit").map((data,index)=>{
+         {props.value.filter((item)=>item.name==="fruit").map((data,index)=>{
            return(
                <div className="papaya_sub"> 
                    <h1>{data.title}</h1>

@@ -1,15 +1,15 @@
 import React, { useContext } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { store1 } from "../../NavigationBar";
 
-export function Papaya(){
-   const [data21]=useContext(store1)
+
+export function Papaya(props){
+   
    const back=useNavigate()
-   console.log("datapapaya",data21)
+
     return(
         <>
          <div className="papaya_main_div">
-          {data21.filter((item)=>item.name==="fruit").map((data,index)=>{
+          {props.value.filter((item)=>item.name==="fruit").map((data,index)=>{
             return(
                 <div className="papaya_sub"> 
                     <h1>{data.title}</h1>

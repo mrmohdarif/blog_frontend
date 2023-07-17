@@ -1,14 +1,29 @@
-import React, { useContext } from "react";
-
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import { Nav } from "../../Nav";
-import { store1 } from "../../NavigationBar";
 import { FitnessThelatest } from "./FitnessThelatest";
 import { FitnessThelatestarticle } from "./FitnessThelatestarticle";
 import { FitnessThelateststories } from "./FitnessThelateststories";
 import Footer from "../../Footer";
 export function Fitness(){
-    const [data13]=useContext(store1)
-    console.log("this is fitness 13",data13)
+    const [Fitness,setFitness]=useState([])
+
+    useEffect(()=>{
+      fetch()
+    },[])
+    
+    const fetch=async()=>{
+      const response=await axios.get("http://localhost:8080/fitness")
+      try{
+        setFitness(response.data)
+      }
+      catch(err){
+        console.log(err);
+      }
+      
+    }
+    console.log(Fitness);
+
     return(
         <>
         <Nav/>
@@ -27,9 +42,9 @@ export function Fitness(){
                     <img src="https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&cs=tinysrgb&w=600" className="fit" alt="tech" style={{}}/>
                  </div>
             </div>
-           <FitnessThelatest/>
-           <FitnessThelatestarticle/>
-           <FitnessThelateststories/>
+           <FitnessThelatest data={Fitness}/>
+           <FitnessThelatestarticle data={Fitness}/>
+           <FitnessThelateststories data={Fitness}/>
            <Footer/>
           
         </>

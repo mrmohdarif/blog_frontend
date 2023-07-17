@@ -2,13 +2,13 @@ import React, { useContext } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { store1 } from "../../NavigationBar";
 
-export function TikTok(){
-   const [data22]=useContext(store1)
+export function TikTok(props){
+  
    const back=useNavigate()
     return(
         <>
          <div className="papaya_main_div">
-          {data22.filter((item)=>item.name==="tiktok").map((data,index)=>{
+          {props.value.filter((item)=>item.name==="tiktok").map((data,index)=>{
             return(
                 <div className="papaya_sub"> 
                     <h1>{data.title}</h1>

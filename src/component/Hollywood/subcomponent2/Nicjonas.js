@@ -1,16 +1,16 @@
-import React, { useContext } from 'react'
+import React  from 'react'
 import { useNavigate } from 'react-router-dom'
-import { store1 } from '../../../NavigationBar'
 
 
-function Nicjonas() {
+
+function Nicjonas(props) {
   
-  const [dataE]=useContext(store1)
-  const back=useNavigate(dataE)
+
+  const back=useNavigate()
   return (
     <div className="papaya_main_div">
        
-    {dataE.filter((item)=>item.categorey==="The Latest Article" && item.name==="Hollywood" && item.path==='/nicjonas').map((data,index)=>{
+    {props.value.filter((item)=>item.categorey==="The Latest Article" && item.name==="Hollywood" && item.path==='/nicjonas').map((data,index)=>{
       return(
           <div className="papaya_sub"> 
               <h1>{data.title}</h1>

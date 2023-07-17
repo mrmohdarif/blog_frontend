@@ -1,12 +1,12 @@
-import React, { useContext } from 'react'
+import React  from 'react'
 import { useNavigate } from 'react-router-dom';
-import { store1 } from '../../../NavigationBar';
-function Pakoda() {
-    const [dataE] = useContext(store1);
-    const back = useNavigate(dataE);
+
+function Pakoda(props) {
+
+    const back = useNavigate();
     return (
       <div className="papaya_main_div">
-        {dataE
+        {props.value
           .filter(
             (item) =>
               item.categorey === "Latest Stories" &&

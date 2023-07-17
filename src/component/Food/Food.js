@@ -1,11 +1,28 @@
-import React from "react";
-
+import React, { useEffect, useState } from "react";
 import { Nav } from "../../Nav";
 import { FoodThelatest } from "./FoodThelatest";
 import { FoodThelatestarticle } from "./FoodThelatestarticle";
 import { FoodThelateststories } from "./FoodThelateststories";
 import Footer from "../../Footer";
+import axios from "axios";
 export function Food(){
+    const [Food,setFood]=useState([])
+
+    useEffect(()=>{
+      fetch()
+    },[])
+    
+    const fetch=async()=>{
+      const response=await axios.get("http://localhost:8080/food")
+      try{
+        setFood(response.data)
+      }
+      catch(err){
+        console.log(err);
+      }
+      
+    }
+    console.log(Food);
     return(
         <>
         <Nav/>
@@ -23,9 +40,9 @@ export function Food(){
                     <img src="https://cdn.tasteatlas.com//Images/Dishes/951728fa0ae74174a2602aaece17368c.jpg?w=905&h=510" alt="tech" className="food3" />
                  </div>
             </div>
-            <FoodThelatest/>
-            <FoodThelatestarticle/>
-            <FoodThelateststories/>
+            <FoodThelatest data={Food}/>
+            <FoodThelatestarticle data={Food}/>
+            <FoodThelateststories data={Food}/>
             <Footer/>
         </>
     )
