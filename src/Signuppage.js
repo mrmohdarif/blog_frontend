@@ -78,7 +78,7 @@ function Signuppage() {
           onChange={handlename}
           value={name}
         />
-        {error &&<span>Please Enter Name</span>}
+        {error && <span className="error_message_signuppage">*Please Enter Name</span>}
         <input
           type="email"
           placeholder="Email"
@@ -87,7 +87,7 @@ function Signuppage() {
           onChange={handleemail}
           value={email}
         />
-         {error &&<span>Please Enter email</span>}
+         {error &&<span className="error_message_signuppage">*Please Enter Email</span>}
         <input
           type="password"
           placeholder="Password"
@@ -96,7 +96,7 @@ function Signuppage() {
           onChange={handlepassword}
           value={password}
         />
-          {error &&<span>Please Enter password</span>}
+          {error &&<span className="error_message_signuppage">*Please Enter Password</span>}
         <input
           type="tel"
           placeholder="Phone"
@@ -105,7 +105,7 @@ function Signuppage() {
           onChange={handlephone}
           value={tel}
         />
-          {error &&<span>Please Enter phone</span>}
+          {error && <span className="error_message_signuppage">*Please Enter Phone</span>}
         <input type="submit" value="submit" className="btn" onClick={submit} />
       </form>
       <p style={{textDecoration:"underline"}} onClick={already}>Already ragister</p>

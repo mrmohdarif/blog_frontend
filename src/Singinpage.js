@@ -49,9 +49,9 @@ function Singinpage() {
 
         <form>
           <input type="email" placeholder="Email"  className="input" onChange={handle_email} required={true} value={email}/>
-          {error &&<span>Please Enter Name</span>}
+          {error &&<span className="error_message_signinpage">*Please Enter Name</span>}
           <input type="password" placeholder="Password"   className="input" onChange={handle_password} required={true} value={password}/>
-          {error &&<span>Please Enter Name</span>}
+          {error &&<span className="error_message_signinpage">*Please Enter Name</span>}
           
            <input type="submit" value="submit" className="btn" onClick={submit}/>
         </form>
