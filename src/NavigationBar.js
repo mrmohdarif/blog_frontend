@@ -66,7 +66,7 @@ import Pakoda from "./component/Food/foodstores/Pakoda";
 // import Signup from "./Signup";
 import Singinpage from "./Singinpage";
 import Signuppage from "./Signuppage"
-import Welcome from "./Welcome";
+// import Welcome from "./Welcome";
 export function NavigationBar(props) {
   // const  [navdata1, setnavdata1]=useState()
   

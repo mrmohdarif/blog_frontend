@@ -13,7 +13,7 @@ export function Bollywood() {
   },[])
   
   const fetch=async()=>{
-    const response=await axios.get("http://localhost:8080/bollywood")
+    const response=await axios.get("https://blog-server-y2za.onrender.com/bollywood")
     try{
       setbollywood(response.data)
     }

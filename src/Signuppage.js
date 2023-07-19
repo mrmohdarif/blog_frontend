@@ -8,6 +8,7 @@ function Signuppage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [tel, setTel] = useState("");
+  const [error,seterror]=useState(false)
   const handlename = (e) => {
     setName(e.target.value);
   };
@@ -22,21 +23,28 @@ function Signuppage() {
   };
   const submit = (e) => {
     e.preventDefault();
+    if(name==="" && email==="" && password==="" && tel==="")
+    {
+   
+      seterror(!error)  
+      return 
+    }
+
     const Data = {
       name: name,
       email: email,
       password: password,
       tel: tel,
     };
-
-    let api = "http://localhost:8080/signuppage";
+    
+    let api = "https://blog-server-y2za.onrender.com/signuppage";
     let response = axios.post(api, Data);
 
     response
       .then((response) => {
         console.log("this is ", response);
-        localStorage.setItem("token",response.data)
-        Navigate("/");
+        localStorage.setItem("token",response.data)      
+          Navigate("/");       
       })
       .catch((err) => {
         console.log(err);
@@ -55,6 +63,7 @@ function Signuppage() {
   };
 
   return (
+    <div className="signUp">
     <div className="Signuppage signin_page">
       <div>
         <h2>Register</h2>
@@ -69,6 +78,7 @@ function Signuppage() {
           onChange={handlename}
           value={name}
         />
+        {error &&<span>Please Enter Name</span>}
         <input
           type="email"
           placeholder="Email"
@@ -77,6 +87,7 @@ function Signuppage() {
           onChange={handleemail}
           value={email}
         />
+         {error &&<span>Please Enter email</span>}
         <input
           type="password"
           placeholder="Password"
@@ -85,6 +96,7 @@ function Signuppage() {
           onChange={handlepassword}
           value={password}
         />
+          {error &&<span>Please Enter password</span>}
         <input
           type="tel"
           placeholder="Phone"
@@ -93,10 +105,13 @@ function Signuppage() {
           onChange={handlephone}
           value={tel}
         />
+          {error &&<span>Please Enter phone</span>}
         <input type="submit" value="submit" className="btn" onClick={submit} />
       </form>
-      <p onClick={already}>Already ragister</p>
+      <p style={{textDecoration:"underline"}} onClick={already}>Already ragister</p>
       
+    </div>
+   
     </div>
   );
 }

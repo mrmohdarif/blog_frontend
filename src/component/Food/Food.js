@@ -13,7 +13,7 @@ export function Food(){
     },[])
     
     const fetch=async()=>{
-      const response=await axios.get("http://localhost:8080/food")
+      const response=await axios.get("https://blog-server-y2za.onrender.com/food")
       try{
         setFood(response.data)
       }

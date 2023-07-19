@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { Nav } from "../../Nav";
 import axios from "axios";
 import { HollywoodThelatest } from "./HollywoodThelatest";
@@ -16,7 +16,7 @@ export function Hollywood(){
     },[])
     
     const fetch=async()=>{
-      const response=await axios.get("http://localhost:8080/hollywood")
+      const response=await axios.get("https://blog-server-y2za.onrender.com/hollywood")
       try{
         sethollywood(response.data)
       }

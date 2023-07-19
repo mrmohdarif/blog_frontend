@@ -1,6 +1,7 @@
 body {
   font-family: serif;
   cursor: pointer;
+  background-color: #FFFFFF;
 }
 .store_home_link_text,
 .bolywood_stores_link_text,
@@ -410,32 +411,40 @@ table tr td {
   justify-content: center;
   flex-direction: column;
   border: 1px solid red;
+  /* background-color: yellow; */
+}
+.signup_page{
+  /* background-color: green; */
 }
 .signin_page{
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid rgb(137, 241, 137);
-  width: 300px;
-
+  border: 10px solid rgb(137, 241, 137);
+  width: 500px;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
   margin: auto;
-  height: auto;
+  
+
 }
 form{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
 }
 .btn{
-  padding: 10px 20px;
+  padding: 15px 50px;
   border-radius: 5px;
   margin-bottom: 20px;
+  font-size: 18px;
 }
 
 .input
 {
-  padding: 10px;
+    padding: 20px;
+    width: 300px;
 }
 .profile{
   width: 60px;
@@ -737,5 +746,15 @@ text-decoration: none;
 .user_com{
   top: 0px;
   right: 230px;
+}
+.signin_page{
+width: 350px;
+}
+.input {
+  padding: 18px;
+  width: 190px;
+}
+.btn{
+  padding: 10px 30px;
 }
 }

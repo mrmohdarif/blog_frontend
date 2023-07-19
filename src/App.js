@@ -15,7 +15,8 @@ function App() {
   },[])
   
   const fetch=async()=>{
-    const response=await axios.get("http://localhost:8080/")
+    const response=await axios.get("https://blog-server-y2za.onrender.com/")
+    console.log(response);
     try{
       setnav(response.data)
     }

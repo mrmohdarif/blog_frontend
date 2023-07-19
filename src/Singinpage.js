@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 function Singinpage() {
   const [email,setEmail]=useState("")
   const [password,setPassword]=useState("")
+  const [error,seterror]=useState(false)
   const  Navigate=useNavigate()
   const handle_email=(e)=>{
     setEmail(e.target.value)
@@ -15,6 +16,11 @@ function Singinpage() {
   }
     const submit=(e)=>{
    e.preventDefault()
+   if(email==="" && password==="")
+   {
+    seterror(!error)  
+    return 
+   }
      const Data={
       email:email,
       password:password
@@ -22,7 +28,7 @@ function Singinpage() {
      }
    
     
-     let api = 'http://localhost:8080/signinpage'
+     let api = 'https://blog-server-y2za.onrender.com/signinpage'
     const response = axios.post(api, Data)
     response.then((response)=>{
       console.log(response);
@@ -43,7 +49,9 @@ function Singinpage() {
 
         <form>
           <input type="email" placeholder="Email"  className="input" onChange={handle_email} required={true} value={email}/>
+          {error &&<span>Please Enter Name</span>}
           <input type="password" placeholder="Password"   className="input" onChange={handle_password} required={true} value={password}/>
+          {error &&<span>Please Enter Name</span>}
           
            <input type="submit" value="submit" className="btn" onClick={submit}/>
         </form>
