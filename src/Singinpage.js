@@ -42,7 +42,7 @@ function Singinpage() {
     }
   return (
     <div className="">
-      <div className="signin_page">
+      <div className="signin_page login">
         <div>
           <h2>Login</h2>
         </div>

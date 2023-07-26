@@ -43,7 +43,7 @@ export function Food(){
             <FoodThelatest data={Food}/>
             <FoodThelatestarticle data={Food}/>
             <FoodThelateststories data={Food}/>
-            <Footer/>
+            {/* <Footer/> */}
         </>
     )
 }

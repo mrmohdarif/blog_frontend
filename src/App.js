@@ -4,6 +4,7 @@ import axios from 'axios';
 
 import { NavigationBar } from './NavigationBar';
 import { useEffect, useState } from 'react';
+import Footer from './Footer';
 
 
 
@@ -27,9 +28,13 @@ function App() {
   }
   console.log("this is nav",nav);
   return (
-    <div className="App">
+    <>
+     <div className="App">
     <NavigationBar data={nav}/>
     </div>
+    <Footer/>
+    </>
+    
   );
 }
 

@@ -1,7 +1,7 @@
 body {
   font-family: serif;
   cursor: pointer;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .store_home_link_text,
 .bolywood_stores_link_text,
@@ -17,24 +17,24 @@ body {
 }
 .food3 {
   width: 400px;
-  height: 150px;
+  height: 140px;
   margin-bottom: 5px;
   border-radius: 10px;
 }
 /* height:"150px",marginBottom:"5px",borderRadius:"10px" */
 .fit {
   width: 400px;
-  height: 150px;
+  height: 130px;
   margin-bottom: 5px;
   border-radius: 10px;
   object-fit: cover;
 }
 .navlink {
   font-size: 28px;
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 20px; */
   /* background-color: #61dafb; */
   /* padding: 15px; */
 }
@@ -64,12 +64,12 @@ body {
   text-decoration: none;
   color: black;
 }
-.remove_underline:hover {
+/* .remove_underline:hover {
   background-color: #a4d0a4;
   padding: 10px;
   transition: 1s;
   border-radius: 10px;
-}
+} */
 
 .home1_image {
   display: flex;
@@ -148,7 +148,7 @@ img {
   border-radius: 5px;
   width: 400px;
   margin-top: 10px;
-  height: 150px;
+  height: 140px;
 }
 .latest_stories {
   display: flex;
@@ -250,19 +250,19 @@ table tr td {
 }
 .hollywood {
   width: 400px;
-  height: 150px;
+  height: 140px;
   margin-bottom: 5px;
   border-radius: 10px;
 }
 .fitness {
   width: 400px;
-  height: 150px;
+  height: 140px;
   margin-bottom: 5px;
   border-radius: 10px;
 }
 .tech {
   width: 400px;
-  height: 150px;
+  height: 140px;
   margin-bottom: 5px;
   border-radius: 10px;
 }
@@ -273,7 +273,7 @@ table tr td {
 }
 .holywood1_home_image {
   width: 400px;
-  height: 150px;
+  height: 140px;
   margin-bottom: 5px;
   border-radius: 10px;
 }
@@ -285,7 +285,7 @@ table tr td {
 
 .hft {
   width: 400px;
-  height: 150px;
+  height: 140px;
   margin-bottom: 5px;
   border-radius: 10px;
 }
@@ -307,7 +307,7 @@ table tr td {
 }
 .tech_img_02 {
   width: 400px;
-  height: 150px;
+  height: 140px;
 }
 .food_the_latestarticle_img {
   width: 250px;
@@ -365,7 +365,6 @@ table tr td {
   margin-bottom: 50px;
 }
 
-
 .Signin {
   padding: 10px 20px;
   border-radius: 15px;
@@ -398,7 +397,7 @@ table tr td {
   align-items: center;
   position: absolute;
   right: 200px;
-  top: 15px;
+  top: 25px;
   gap: 20px;
 }
 .input_signuppage {
@@ -413,10 +412,8 @@ table tr td {
   border: 1px solid red;
   /* background-color: yellow; */
 }
-.signup_page{
-  /* background-color: green; */
-}
-.signin_page{
+
+.signin_page {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -425,76 +422,92 @@ table tr td {
   border-top-left-radius: 100px;
   border-bottom-right-radius: 100px;
   margin: auto;
-  
-
+  margin-bottom: 20px;
 }
-form{
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
 }
-.btn{
+.btn {
   padding: 15px 50px;
   border-radius: 5px;
   margin-bottom: 20px;
   font-size: 18px;
 }
 
-.input
-{
-    padding: 20px;
-    width: 300px;
+.input {
+  padding: 20px;
+  width: 300px;
 }
-.profile{
+.profile {
   width: 60px;
   height: 60px;
 }
-.logout{
+.logout {
   padding: 10px 30px;
-   border-radius: 5px;
-   background-color: #a4d0a4;
-   border: none;
-   color: white;
-   font-size: 18px;
+  border-radius: 5px;
+  background-color: #a4d0a4;
+  border: none;
+  color: white;
+  font-size: 18px;
 }
-.logout:hover{
+.logout:hover {
   background-color: #6beb6b;
 }
-.login_register_btn{
+.login_register_btn {
   border-style: groove;
-border: 2px solid white;
-font-size: 22px;
-padding: 5px 20px;
-background-color: #6beb6b;
-color: white;
-border-radius: 5px;
-text-decoration: none;
+  border: 2px solid white;
+  font-size: 22px;
+  padding: 5px 20px;
+  background-color: #6beb6b;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
 }
-.login_register_btn:hover{
+.login_register_btn:hover {
   background-color: #077907;
   transition: 1s;
 }
-.user_icon{
+.user_icon {
   width: 50px;
   height: 50px;
 }
-.user_name{
+.user_name {
   display: inline-block;
   display: flex;
   /* justify-content: center; */
   align-items: center;
 }
-.user_com{
+.user_com {
   position: absolute;
   top: 10px;
   right: 900px;
 }
-.toggle_btn{
-  display:none;
+.toggle_btn {
+  display: none;
 }
-.error_message_signuppage,.error_message_signinpage{
+.error_message_signuppage,
+.error_message_signinpage {
   color: red;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+li{
+  
+  list-style-type: none;
+}
+.active{
+  background-color: #a4d0a4;
+  padding: 10px;
+  border-radius: 5px;
+}
+.login{
+  margin-bottom: 180px;
 }
 @media only screen and (max-width: 600px) {
   .home1_image {
@@ -701,62 +714,55 @@ text-decoration: none;
   .fitness_home {
     width: 350px;
   }
-  .toggle_btn{
+  .toggle_btn {
     width: 60px;
     height: 60px;
     position: absolute;
     top: 10px;
     right: 10px;
-    display:block;
+    display: block;
   }
-  .signin_signup 
-  {
-    right:130px;
-    top:80px;
+  .signin_signup {
+    right: 130px;
+    top: 80px;
   }
 
-.login_register_btn
-{
-  font-size: 15px;
-}
-.login_register_btn
-{
-  padding: 1px 35px   
-}
-.logout
-{
-  font-size: 15px;
-  padding: 6px 30px;
-}
-.profile
-{
-  width: 30px;
-  height: 30px;
-}
-.profile_logout{
-
+  .login_register_btn {
+    font-size: 15px;
+  }
+  .login_register_btn {
+    padding: 1px 35px;
+  }
+  .logout {
+    font-size: 15px;
+    padding: 6px 30px;
+  }
+  .profile {
+    width: 30px;
+    height: 30px;
+  }
+  .profile_logout {
     right: 125px;
     top: 62px;
     right: 15px;
     top: 65px;
-}
+  }
 
-.user_com {
-  
-  right: 100px;
-}
-.user_com{
-  top: 0px;
-  right: 230px;
-}
-.signin_page{
-width: 350px;
-}
-.input {
-  padding: 18px;
-  width: 190px;
-}
-.btn{
-  padding: 10px 30px;
-}
+  .user_com {
+    right: 100px;
+  }
+  .user_com {
+    top: 0px;
+    right: 230px;
+  }
+  .signin_page {
+    width: 350px;
+  }
+  .input {
+    padding: 18px;
+    width: 190px;
+  }
+  .btn {
+    padding: 10px 30px;
+  }
 }

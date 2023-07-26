@@ -72,7 +72,7 @@ export function Bollywood() {
       <BollywoodThelatest data={bollywood}/>
       <BollywoodThelatestarticle data={bollywood}/>
       <BollywoodThelateststories data={bollywood}/>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 }

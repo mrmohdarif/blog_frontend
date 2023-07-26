@@ -45,7 +45,7 @@ export function Fitness(){
            <FitnessThelatest data={Fitness}/>
            <FitnessThelatestarticle data={Fitness}/>
            <FitnessThelateststories data={Fitness}/>
-           <Footer/>
+           {/* <Footer/> */}
           
         </>
     )

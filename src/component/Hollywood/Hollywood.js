@@ -48,7 +48,7 @@ export function Hollywood(){
               <HollywoodThelatest data={hollywood}/>
               <HollywoodThelatestarticle data={hollywood}/>
               <HollywoodThelateststories data={hollywood}/>
-              <Footer/>
+              {/* <Footer/> */}
         </>
     )
 }

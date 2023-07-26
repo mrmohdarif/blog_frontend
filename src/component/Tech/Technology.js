@@ -44,7 +44,7 @@ export function Technology(){
             <TechnologyThelatest data={Tech}/>
             <TechnologyThelatestarticle data={Tech}/>
             <TechnologyThelateststories data={Tech}/>
-            <Footer/>
+            {/* <Footer/> */}
         </>
     )
 }

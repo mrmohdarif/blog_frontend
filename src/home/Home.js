@@ -56,10 +56,11 @@ const fetch=async()=>{
           />
         </div>
       </div>
+
          <Thelatest data={home}/>
         <Thelatestarticle data={home}/>
         <Thelateststories data={home}/>
-        <Footer/> 
+        {/* <Footer/>  */}
         
     </>
   );
