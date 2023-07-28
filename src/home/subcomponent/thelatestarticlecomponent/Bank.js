@@ -17,7 +17,7 @@ function Bank(props) {
            
              <h1>{data.title}</h1>
              <p style={{fontSize:"22px"}}>{data.text}</p>
-             <button className='backbtn' onClick={()=>{back(-1)}}>Back</button>
+             <button className='backbtn_bank' onClick={()=>{back(-1)}}>Back</button>
             </div>
             
         )

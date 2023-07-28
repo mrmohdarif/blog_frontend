@@ -31,8 +31,10 @@ function Singinpage() {
      let api = 'https://blog-server-y2za.onrender.com/signinpage'
     const response = axios.post(api, Data)
     response.then((response)=>{
-      console.log(response);
-      localStorage.setItem('token',response.data)
+      console.log(response.data);
+
+      localStorage.setItem('token',response.data[0])
+      localStorage.setItem('name',response.data[1])
      Navigate('/')
     }).catch((err)=>{
       alert("Something went wrong !!!!")

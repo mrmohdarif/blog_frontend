@@ -34,7 +34,7 @@ function Ahana(props) {
             />
             <p>{data.content}</p>
             <button
-              className="backbtn"
+              className="backbtn_article"
               onClick={() => {
                 back(-1);
               }}

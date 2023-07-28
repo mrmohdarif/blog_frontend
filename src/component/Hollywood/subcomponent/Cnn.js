@@ -19,7 +19,7 @@ function Cnn(props) {
                <p style={{lineHeight:"1.3"}}>
                   {data.content}
                </p>
-               <button className='backbtn' onClick={()=>{back(-1)}}>Back</button>
+               <button className='backbtn_article' onClick={()=>{back(-1)}}>Back</button>
           </div>
       )
     })}

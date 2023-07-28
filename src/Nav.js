@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import Profile from "./Profile";
+// import Profile from "./Profile";
 import Logout from "./Logout";
 import Welcome from "./Welcome";
 
@@ -50,21 +50,21 @@ export function Nav() {
 
           {token ? (
             <div className="signin_signup profile_logout">
-              <Profile />
+              {/* <Profile /> */}
               <Logout />
               <div className="user_com">
                 <Welcome />
               </div>
             </div>
           ) : (
-            <div className="signin_signup ">
+           <div className="signin_signup ">
               <NavLink to="/signinpage" className="login_register_btn">
                 Login
               </NavLink>
               <NavLink to="/signuppage" className="login_register_btn">
                 Register
               </NavLink>
-            </div>
+            </div> 
           )}
         </div>
       ) : (

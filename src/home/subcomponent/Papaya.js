@@ -22,7 +22,7 @@ export function Papaya(props){
             )
           })}
           </div>
-          <button className='backbtn' onClick={()=>{back(-1)}}>Back</button>
+          <button className='backbtn_papaya' onClick={()=>{back(-1)}}>Back</button>
         </>
     )
 }

@@ -29,7 +29,7 @@ function Iq(props) {
                 /> 
                 <p style={{ lineHeight: "1.5" }}>{data.content}</p>
                 <button
-                  className="backbtn"
+                  className="backbtn_article"
                   onClick={() => {
                     back(-1);
                   }}

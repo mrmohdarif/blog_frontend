@@ -36,14 +36,15 @@ function Signuppage() {
       password: password,
       tel: tel,
     };
-    
     let api = "https://blog-server-y2za.onrender.com/signuppage";
     let response = axios.post(api, Data);
 
     response
       .then((response) => {
-        console.log("this is ", response);
-        localStorage.setItem("token",response.data)      
+        console.log("this is signuppagetoken", response.data[0]);
+        console.log("this is signuppagename", response.data[1]);
+        localStorage.setItem("token",response.data[0])
+        localStorage.setItem("name",response.data[1])      
           Navigate("/");       
       })
       .catch((err) => {

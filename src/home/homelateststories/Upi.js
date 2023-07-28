@@ -29,7 +29,7 @@ function Upi(props) {
               /> 
               <p style={{ lineHeight: "1.5" }}>{data.text}</p>
               <button
-                className="backbtn"
+                className="backbtn_upi"
                 onClick={() => {
                   back(-1);
                 }}

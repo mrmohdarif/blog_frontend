@@ -223,7 +223,39 @@ table tr td {
   color: #fdfdfd;
   font-weight: bold;
   border: 4px solid #c8c1c1;
+  margin-left: 450px;
 }
+.backbtn_bank{
+  font-size: 22px;
+  padding: 10px 80px;
+  border-radius: 50px;
+  background-color: orange;
+  color: #fdfdfd;
+  font-weight: bold;
+  border: 4px solid #c8c1c1;
+  /* margin-left: 450px; */
+  margin-left: 200px;
+}
+.backbtn_papaya{
+  font-size: 22px;
+  padding: 10px 80px;
+  border-radius: 50px;
+  background-color: orange;
+  color: #fdfdfd;
+  font-weight: bold;
+  border: 4px solid #c8c1c1;
+  margin-left: 450px;
+}
+.backbtn_navy,.backbtn_rahul,.backbtn_virat,.backbtn_upi,.backbtn_article{
+  font-size: 22px;
+  padding: 10px 80px;
+  border-radius: 50px;
+  background-color: orange;
+  color: #fdfdfd;
+  font-weight: bold;
+  border: 4px solid #c8c1c1;
+}
+
 .backbtn:hover {
   transition: 1s;
   color: black;
@@ -353,7 +385,7 @@ table tr td {
   text-align: center;
   padding: 10px;
   font-size: 22px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 /* hello  */
@@ -422,7 +454,7 @@ table tr td {
   border-top-left-radius: 100px;
   border-bottom-right-radius: 100px;
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 33px;
 }
 form {
   display: flex;
@@ -507,7 +539,7 @@ li{
   border-radius: 5px;
 }
 .login{
-  margin-bottom: 180px;
+  margin-bottom: 200px;
 }
 @media only screen and (max-width: 600px) {
   .home1_image {
@@ -611,7 +643,8 @@ li{
   }
   .icon {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 0px 10px;
   }
   .icons {
     display: block;
@@ -769,7 +802,7 @@ li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    /* margin-top: 50px; */
   }
   .active{
     padding: 5px;
@@ -777,4 +810,8 @@ li{
   li{
     font-size: 18px;
   }
+  .signin_signup{
+  display: none;
+  }
+
 }
