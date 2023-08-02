@@ -11,7 +11,7 @@ function Lalu(props) {
                 <div className="papaya_sub"> 
                     <h1>{data.title}</h1>
                     <span>{data.description}</span>
-                    <img src={data.urltoimg} alt="the_latest_Javan" style={{width:"600px"}} />
+                    <img src={data.urltoimg} alt="the_latest_Javan" style={{}} />
                      <p>
                         {data.content}
                      </p>

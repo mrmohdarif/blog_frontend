@@ -5,7 +5,7 @@ function Thelatest(props){
     const token=localStorage.getItem("token")
     return(
         <>
-         <h1>The Latest</h1>
+         <h1 className="home_h1">The Latest</h1>
           
          
           <div className="the_latest">
@@ -14,7 +14,7 @@ function Thelatest(props){
             return(
                 
                 <div className="the_latest_image" key={d.id}>
-                {token?<Link to={d.path}><img src={d.img} alt="the_latest" style={{width:'auto', height:"200px",objectFit:"cover"}} className="img" /></Link>:<Link to='/signuppage'><img src={d.img} alt="the_latest" style={{width:'auto', height:"200px",objectFit:"cover"}} className="img" /></Link>}
+                {token?<Link to={d.path}><img src={d.img} alt="the_latest" style={{}} className="img" /></Link>:<Link to='/signuppage'><img src={d.img} alt="the_latest" style={{}} className="img" /></Link>}
                 <h3 >{d.heading}</h3>
                 <p>{d.text}</p>
                 </div>

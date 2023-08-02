@@ -16,9 +16,9 @@ export function HollywoodThelatestarticle(props){
                {props.data.filter((item)=>item.categorey==="The Latest Article" && item.name==='Hollywood').map((d1,index)=>{
                 return(
                 <div className="latest_article_box" key={d1.id}>
-                {token?<Link to={d1.path}><img src={d1.urlToImage} alt="latest_article" style={{width:"250px",marginTop:"10px"}}/></Link>:<Link to='/signuppage'><img src={d1.urlToImage} alt="latest_article" style={{width:"250px",marginTop:"10px"}}/></Link>}
+                {token?<Link to={d1.path}><img src={d1.urlToImage} alt="latest_article" style={{}} className="hollywood_thelatestarticle_image"/></Link>:<Link to='/signuppage'><img src={d1.urlToImage} alt="latest_article" style={{}} className="hollywood_thelatestarticle_image"/></Link>}
                 <div className="latest_article_box_child">
-                 {token?<Link to={d1.path} ><h3 className="Holywood_link_text">{d1.title}</h3></Link>:<Link to='/signuppage'><h3 className="Holywood_link_text">{d1.title}</h3></Link>}
+                 {token?<Link to={d1.path} className="remove_underline"><p className="Holywood_link_text">{d1.title}</p></Link>:<Link to='/signuppage' className="remove_underline"><p className="Holywood_link_text">{d1.title}</p></Link>}
                     <p>{d1.publishedAt}</p>
                  </div>
             </div>

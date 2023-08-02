@@ -8,7 +8,7 @@ function BollywoodThelatest(props) {
 
   return (
     <>
-      <h1>The Latest</h1>
+      <h1 className="bolywood_thelatest">The Latest</h1>
 
       <div className="the_latest">
         {props.data 
@@ -19,13 +19,12 @@ function BollywoodThelatest(props) {
                {token?<Link to={data.path}>
                   <img
                     src={data.urlToImage}
+                    className="bolywood_thelatest_front"
                     alt="the_latest"
                     style={{
-                      width: "auto",
-                      height: "200px",
-                      objectFit: "cover",
+                    
                     }}
-                    className="img"
+                    
                   />
                 </Link>:<Link to='/signuppage'>
                   <img
@@ -40,7 +39,7 @@ function BollywoodThelatest(props) {
                   />
                 </Link>}
 
-                <h3>{data.title}</h3>
+                <p>{data.title}</p>
                 <p>{data.publishedAt}</p>
               </div>
             );

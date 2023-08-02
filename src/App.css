@@ -6,7 +6,7 @@ body {
 .store_home_link_text,
 .bolywood_stores_link_text,
 .Holywood_link_text,
-.holywood_link_storey_text {
+.holywood_link_storey_text,.remove_underline {
   text-decoration: none;
   color: black;
 }
@@ -137,18 +137,19 @@ body {
 h3 {
   margin: 0px;
   display: inline;
-  border-bottom: 3px solid rgb(128, 126, 126);
+  /* border-bottom: 3px solid rgb(128, 126, 126); */
   width: 300px;
 }
-img:hover {
+
+/* img:hover {
   transform: scale(1.1);
   transition: 2s;
-}
+} */
 img {
   border-radius: 5px;
-  width: 400px;
+  width: 350px;
   margin-top: 10px;
-  height: 140px;
+  height: 150px;
 }
 .latest_stories {
   display: flex;
@@ -346,24 +347,31 @@ table tr td {
 }
 .javan_img {
   width: 600px;
+  height: 300px;
 }
 .papaya_img {
   width: 600px;
+  height: 300px;
 }
 .the_latest_Javan_img {
   width: 600px;
+  height: 300px;
 }
 .Anushkha {
   width: 600px;
+  height: 300px;
 }
 .manoj {
   width: 600px;
+  height: 300px;
 }
 .dharavi {
   width: 600px;
+  height: 300px;
 }
 .actres {
   width: 600px;
+  height: 300px;
 }
 .Holy_img,
 .holy_article_img,
@@ -374,6 +382,7 @@ table tr td {
 .Food_latest,
 .food_article {
   width: 600px;
+  height: 300px;
 }
 .fitness_home {
   width: 650px;
@@ -514,7 +523,7 @@ form {
 }
 .user_com {
   position: absolute;
-  top: 10px;
+  top: 0px;
   right: 900px;
 }
 .toggle_btn {
@@ -540,6 +549,54 @@ li{
 }
 .login{
   margin-bottom: 200px;
+}
+.img_thelatest{
+ width: 300px;
+ height: 200px;
+}
+.bone{
+  height: 300px;
+}
+.fitness_1{
+width: 400px;
+}
+.bolywood_thelatest_front{
+width: 350px; 
+height: 200px;
+}
+.holywood_thelatest{
+  width: 350px;
+  height: 200px;
+
+}
+.hollywood_thelatestarticle_image{
+width: 300px;
+height: 150px;
+}
+.home_latest_stories{
+  display: flex;
+  justify-content:space-between;
+}
+.bolywood_latest_stories{
+  display: flex;
+  justify-content:space-between;
+}
+.holywood_latest_stories{
+  display: flex;
+  justify-content: space-between;
+}
+.fitness_title{
+  width: 200px;
+}
+.fitness_latest_stories{
+  display: flex;
+  justify-content: space-between;
+}
+.fitness_stories_img{
+  width: 350px;
+}
+.article_heading{
+  margin-top: 50px;
 }
 @media only screen and (max-width: 600px) {
   .home1_image {
@@ -607,6 +664,8 @@ li{
   }
   .article_heading {
     text-align: center;
+    margin-top: 50px;
+   
   }
   .hollywood {
     width: 350px;
@@ -619,18 +678,19 @@ li{
   }
   .img {
     width: 350px;
+    height: 180px;
   }
   .the_latest_image {
     width: 350px;
     height: 400px;
   }
   .latest_stories {
-    margin-top: 0px;
+    margin-top: 150px;
   }
-  img:hover {
+  /* img:hover {
     transform: scale(1.1);
     transition: 2s;
-  }
+  } */
   .logo {
     display: block;
   }
@@ -638,9 +698,14 @@ li{
     justify-content: space-around;
   }
 
-  h1 {
+  .home_h1 {
     text-align: center;
   }
+ .home_latest_stores_heading{
+  text-align: center;
+  position: relative;
+  top: 380px
+ }
   .icon {
     display: flex;
     justify-content: space-between;
@@ -670,7 +735,7 @@ li{
   }
 
   .stores {
-    margin-top: 600px;
+    margin-top: 200px;
   }
   .bolywood_the_latest_stories {
     margin-top: 580px;
@@ -714,6 +779,7 @@ li{
   }
   .javan_img {
     width: 350px;
+   
   }
   .backbtn {
     margin: 12px 90px;
@@ -746,7 +812,9 @@ li{
   .food_article,
   .fitness_home {
     width: 350px;
+    
   }
+ 
   .toggle_btn {
     width: 60px;
     height: 60px;
@@ -793,7 +861,7 @@ li{
   }
   .input {
     padding: 18px;
-    width: 190px;
+    width: 170px;
   }
   .btn {
     padding: 10px 30px;
@@ -813,5 +881,110 @@ li{
   .signin_signup{
   display: none;
   }
+  .home_latest_stories
+{
+  margin-top: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+  /* .h1{
+    position: relative;
+    top: 370px;
+} */
+.hollywood_thelatestarticle_image{
+  width: 350px;
+  height: 200px;
+}
+.article_heading{
+position: relative;
+top: 0px;
+}
+img{
+  width: 350px;
+  height: 200px;
+}
+.bolywood_thelatest{
+  text-align: center;
+}
+.bolywood_latest_stories_heading{
+  text-align: center;
+  position: relative;
+  top: 150px;
+}
+.bolywood_latest_stories{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+.holywood_thelatest_h1{
+  text-align: center;
+}
+.hollywood_the_latest_stories_h1{
+  text-align: center;
+}
+.Hollywood_latest_stories{
+  margin-top: 750px;
+}
+.fitness_thelatest_h1{
+  text-align: center;
+}
+.fitness_thelateststories_h1{
+  text-align: center;
+  position: relative;
+  top: 700px;
+}
+.fitness_latest_stories{
+  margin-top: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+.img_thelatest{
+width: 350px;
+}
+.fitness_stories_img{
+  width: 350px;
+}
+.fitness_latestarticle{
+  width: 350px;   
+}
+.holywood_latest_stories{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tech_stores_h1{
+  text-align:center;
+  position: relative;
+  top: 150px;
+}
+.food_stories{
+  text-align: center;
+  position: relative;
+    top: -120px;
+}
+.food_latest{
+  text-align: center;
+}
+.fitness_title{
+width: 350px;
+}
+.icon {
+display: flex;
+justify-content:center;
+}
+.backbtn_papaya {
+  margin-left:80px
+}
+.backbtn_bank,.backbtn_papaya,.backbtn_bank,.backbtn_papaya,.backbtn_bank,.backbtn_papaya,.backbtn_papaya   {
+  margin-left: 80px;
+}
+.tiktok{
+  width: 350px;
+  height: 200px;
+}
 
 }

@@ -7,8 +7,8 @@ function Thelateststories(props){
     return(
         <div className="stores">
         
-        <h1>Latest Stories</h1>
-           <div className="latest_stories">
+        <h1 className="home_latest_stores_heading">Latest Stories</h1>
+           <div className="home_latest_stories">
            
         
            {props.data.filter((item)=>item.categorey==="Latest Stories" && item.name==="homepage"  ).map((d,index)=>{

@@ -37,7 +37,7 @@ export function Fitness(){
                 </div>
 
                  <div className="home2_image">
-                    <img src="https://images.pexels.com/photos/4024914/pexels-photo-4024914.jpeg?auto=compress&cs=tinysrgb&w=600" className="fit fit1" class alt="hollywood" style={{}}/>
+                    <img src="https://images.pexels.com/photos/4024914/pexels-photo-4024914.jpeg?auto=compress&cs=tinysrgb&w=600" className="" class alt="hollywood" style={{}}/>
                     <img src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=600" className="fit" alt="fitness" style={{}}/>
                     <img src="https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&cs=tinysrgb&w=600" className="fit" alt="tech" style={{}}/>
                  </div>

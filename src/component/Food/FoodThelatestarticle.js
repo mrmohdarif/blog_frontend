@@ -16,7 +16,7 @@ const token=localStorage.getItem('token')
                 <div className="latest_article_box" key={d1.id}>
                 {token ? <Link to={d1.path}><img src={d1.urlToImage} className="food_the_latestarticle_img" alt="latest_article" style={{marginTop:"10px"}}/></Link>:<Link to="/signuppage"><img src={d1.urlToImage} className="food_the_latestarticle_img" alt="latest_article" style={{marginTop:"10px"}}/></Link>}
                  <div className="latest_article_box_child">
-                    <h3>{d1.title}</h3>
+                    <p>{d1.title}</p>
                     <p>{d1.description}</p>
                     {/* <p>{d1.publishedAt}</p> */}
                  </div>
