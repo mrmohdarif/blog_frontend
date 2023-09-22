@@ -9,7 +9,7 @@ function Logout() {
     Navigate(-1) 
     }
   return (
-    <div>
+    <div className="logout_div">
         <button className='logout' onClick={handlelogout}>Logout</button>
         </div>
   )

@@ -3,6 +3,7 @@ body {
   cursor: pointer;
   background-color: #ffffff;
 }
+
 .store_home_link_text,
 .bolywood_stores_link_text,
 .Holywood_link_text,
@@ -487,12 +488,12 @@ form {
   height: 60px;
 }
 .logout {
-  padding: 10px 30px;
+  padding: 5px 20px;
   border-radius: 5px;
   background-color: #a4d0a4;
   border: none;
   color: white;
-  font-size: 18px;
+  font-size: 12px;
 }
 .logout:hover {
   background-color: #6beb6b;
@@ -511,9 +512,10 @@ form {
   background-color: #077907;
   transition: 1s;
 }
-.user_icon {
+.user_icon ,.mobile_view_user_icon {
   width: 50px;
   height: 50px;
+  stroke:#077907;
 }
 .user_name {
   display: inline-block;
@@ -524,7 +526,7 @@ form {
 .user_com {
   position: absolute;
   top: 0px;
-  right: 900px;
+  /* right: 900px; */
 }
 .toggle_btn {
   display: none;
@@ -597,6 +599,26 @@ height: 150px;
 }
 .article_heading{
   margin-top: 50px;
+}
+.Navigation2{
+  display: none;
+}
+.user_name_text{
+  font-size: 18px;
+}
+.logout_div{
+font-size: 0px;
+}
+
+   .name_logout{
+  font-size: 0px;
+  background-color: gainsboro;
+  padding: 9px;
+  border-radius: 10px;
+} 
+
+.welcome{
+  display: none;
 }
 @media only screen and (max-width: 600px) {
   .home1_image {
@@ -824,8 +846,8 @@ height: 150px;
     display: block;
   }
   .signin_signup {
-    right: 65px;
-    top: 86px;
+    right: 150px;
+    top: 15px;
   }
 
   .login_register_btn {
@@ -836,7 +858,7 @@ height: 150px;
   }
   .logout {
     font-size: 15px;
-    padding: 6px 30px;
+    padding: 3px 10px;
   }
   .profile {
     width: 30px;
@@ -878,9 +900,9 @@ height: 150px;
   li{
     font-size: 18px;
   }
-  .signin_signup{
+  /* .signin_signup{
   display: none;
-  }
+  } */
   .home_latest_stories
 {
   margin-top: 400px;
@@ -974,7 +996,7 @@ width: 350px;
 }
 .icon {
 display: flex;
-justify-content:center;
+justify-content:space-between;
 }
 .backbtn_papaya {
   margin-left:80px
@@ -986,5 +1008,90 @@ justify-content:center;
   width: 350px;
   height: 200px;
 }
+.Navigation1{
+  display: none;
+}
+.Navigation2{
+  display: block;
+}
+.logo{
+  font-size: 25px;
+} 
+.the {
+font-size: 25px;
+}
+.user_name_text
+{
+  font-size: 16px;
+}
+.user_com{
+  display: none;
+}
+.user_name,.mobile_view_user_icon{
+justify-content: center;
+position: absolute;
+    top: 10px;
+    right: 80px;
 
+}
+.welcome{
+  display: block;
+}
+.signin_signup{
+flex-direction: column;
+gap: 5px;
+}
+.login_register_btn {
+  padding: 0px 10px;
+}
+.handle_hide1{
+  display: none;
+}
+
+
+/* .name_logout{
+  font-size: 0px;
+  background-color: gainsboro;
+  padding: 9px;
+  border-radius: 10px;
+} */
+}
+@media only screen and (min-width:700px) and (max-width:850px)
+{
+  .user_name {
+    margin-left: 50rem;
+}
+.home1_image {
+  justify-content: space-evenly;
+}
+.the_latest{
+  justify-content: space-around;
+}
+img{
+  width:300px
+}
+.the_latest_article_main{
+  justify-content: space-around
+}
+
+.article_heading {
+  margin-left: 70px;
+}
+.home_latest_stories{
+  justify-content: space-evenly
+}
+.footer {
+  width: 140%;
+  /* position: relative;
+  top: 40rem; */
+}
+h1{
+  margin-left: 3.5rem
+}
+.bolywood_thelatest_front{
+  width: 300px;
+}
+.signin_signup{
+  right: -280px
+}
 }
