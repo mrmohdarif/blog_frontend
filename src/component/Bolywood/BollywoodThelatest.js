@@ -31,7 +31,7 @@ function BollywoodThelatest(props) {
                     src={data.urlToImage}
                     alt="the_latest"
                     style={{
-                      width: "auto",
+                      width: "300px",
                       height: "200px",
                       objectFit: "cover",
                     }}

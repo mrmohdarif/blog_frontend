@@ -1059,6 +1059,10 @@ gap: 5px;
 }
 @media only screen and (min-width:700px) and (max-width:850px)
 {
+  .App {
+    
+    margin: 0px 0px 0px 0px;
+}
   .user_name {
     margin-left: 50rem;
   
@@ -1103,6 +1107,9 @@ h1{
 }
 ul{
   justify-content: space-evenly
+}
+.input{
+  border: 1px solid black;
 }
 }
 /* @media screen and (max-width:600px) {
