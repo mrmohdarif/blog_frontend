@@ -116,7 +116,7 @@ body {
 
 .the_latest_article_child {
   /* border: 1px solid red; */
-  width: 500px;
+  width: 680px;
   height: 550px;
   display: flex;
   flex-direction: column;
@@ -151,6 +151,7 @@ img {
   width: 350px;
   margin-top: 10px;
   height: 150px;
+  object-fit: cover;
 }
 .latest_stories {
   display: flex;
@@ -1060,6 +1061,7 @@ gap: 5px;
 {
   .user_name {
     margin-left: 50rem;
+  
 }
 .home1_image {
   justify-content: space-evenly;
@@ -1094,4 +1096,15 @@ h1{
 .signin_signup{
   right: -280px
 }
+.user_com {
+  position: relative;
+  top: 0px;
+  /* right: 900px; */
 }
+ul{
+  justify-content: space-evenly
+}
+}
+/* @media screen and (max-width:600px) {
+  
+} */
