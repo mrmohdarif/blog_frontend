@@ -1060,8 +1060,12 @@ gap: 5px;
 @media only screen and (min-width:700px) and (max-width:850px)
 {
   .App {
-    
+    width:700px;
     margin: 0px 0px 0px 0px;
+}
+.logo{
+justify-content: flex-start;
+margin-left: 30px;
 }
   .user_name {
     margin-left: 50rem;
@@ -1069,9 +1073,13 @@ gap: 5px;
 }
 .home1_image {
   justify-content: space-evenly;
+
 }
 .the_latest{
-  justify-content: space-around;
+  justify-content: center;
+  overflow-y: scroll;
+  margin: 0px 0px 0px 30px;
+  column-gap: 20px;
 }
 img{
   width:300px
@@ -1084,10 +1092,13 @@ img{
   margin-left: 70px;
 }
 .home_latest_stories{
-  justify-content: space-evenly
+  justify-content: center;
+  overflow-y: scroll;
+  margin: 0px 0px 0px 30px;
+  column-gap: 20px;
 }
 .footer {
-  width: 140%;
+  width: 97%;
   /* position: relative;
   top: 40rem; */
 }
@@ -1098,7 +1109,7 @@ h1{
   width: 300px;
 }
 .signin_signup{
-  right: -280px
+  right: 30px
 }
 .user_com {
   position: relative;
@@ -1106,12 +1117,108 @@ h1{
   /* right: 900px; */
 }
 ul{
-  justify-content: space-evenly
+  justify-content: center;
+  column-gap: 20px;
 }
 .input{
   border: 1px solid black;
 }
+.home1_image{
+justify-content: center;
+margin-left: 50px;
+column-gap: 20px;
+
 }
-/* @media screen and (max-width:600px) {
-  
-} */
+.pathan{
+  width: 350px;
+}
+.hollywood,.fitness,.tech{
+  width: 340px;
+}
+.avdertise{
+  display: none;
+}
+.active{
+  padding: 5px;
+}
+.bolywood_home_image{
+  width: 350px;
+  height:460px;
+  object-fit: fill;
+}
+.holywood1_home_image{
+  width: 340px;
+}
+.fitness_home_image{
+  width: 340px;
+}
+.tech_home_image{
+  width: 340px;
+}
+.the_latest_image{
+  height: auto;
+}
+.bolywood_latest_stories{
+display: flex;
+justify-content: center;
+overflow-y: scroll;
+margin: 0px 0px 0px 20px;
+column-gap: 20px;
+}
+.mareval_home_image{
+  width: 350px;
+  object-fit: fill;
+}
+.hft{
+  width: 340px;
+}
+.holywood_thelatest{
+  width: 250px;
+}
+.holywood_latest_stories {
+   justify-content: center;
+   overflow-y: scroll;
+   margin: 0px 0px 0px 20px;
+   column-gap: 20px;
+}
+.fit{
+  width: 300px;
+}
+.fitness_home{
+  width: 350px;
+  height: 430px;
+}
+.fitness_latest_stories{
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+  margin: 0px 0px 0px 20px;
+  column-gap: 20px;
+}
+.tech_img_01{
+  width: 350px;
+}
+.tech_img_02{
+  width: 350px;
+}
+.latest_stories{
+  justify-content: center;
+  margin: 0px 0px 0px 20px;
+  overflow-y: scroll;
+  column-gap: 20px;
+}
+.food_home{
+ width:350px;
+ object-fit: fill;
+}
+.food3{
+  width: 340px;
+}
+}
+
+ @media screen and (width:820px) {
+  .App {
+    
+    margin: 0px 0px 0px 0px;
+}
+} 

@@ -12,7 +12,7 @@ export function FoodThelatest(props){
             return(
                 
                 <div className="the_latest_image" key={d.id}>
-                {token ?<Link to={d.path}><img src={d.urlToImage} alt="the_latest" style={{width:'350px', height:"200px",objectFit:"cover"}} className="img" /></Link>:<Link to='/signuppage'><img src={d.urlToImage} alt="the_latest" style={{width:'350px', height:"200px",objectFit:"cover"}} className="img" /></Link>}
+                {token ?<Link to={d.path}><img src={d.urlToImage} alt="the_latest" style={{width:'300px', height:"200px",objectFit:"cover"}} className="img" /></Link>:<Link to='/signuppage'><img src={d.urlToImage} alt="the_latest" style={{width:'350px', height:"200px",objectFit:"cover"}} className="img" /></Link>}
                 <p >{d.title}</p>
                 <p>{d.description}</p>
                 {/* <span style={{margin:"0px",}}>{d.publishedAt}</span> */}
